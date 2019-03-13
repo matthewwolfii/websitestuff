@@ -1,0 +1,31 @@
+/* aboutme-style.css*/
+/* Change the color of at least two elements---
+
+Change the font properties of at least two elements (such as family, size, weight, style). 
+Here are some standard fonts you may want to use: Arial, Arial Black, Verdana, Trebuchet MS, 
+Georgia, Tahoma, Courier New, Times New Roman
+
+Change at least one other thing of your choosing (such as background color, text alignment, 
+etc.)*/
+
+body {
+    background-color: #8A2BE2;
+}
+h1 {
+    color: white;
+    font-family: Arial monospace;
+}
+h2 {
+    color: white;
+    font-family: Verdana Georgia;
+}
+p {
+    font-family: Tahoma Courier;
+    color: white;
+}
+ul {
+    color: silver;
+}
+ol {
+    color: silver;
+}
