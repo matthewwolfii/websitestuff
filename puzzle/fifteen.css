@@ -1,0 +1,29 @@
+body{
+  font-family: cursive;
+  font-size: 14pt;
+  text-align: center;
+}
+
+#puzzlearea{
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border: 1px solid red;
+}
+
+div div{
+  width: 90px;
+  height: 90px;
+  border: 5px solid black;
+  font-size: 40pt;
+  color: yellow;
+  position: absolute;
+  background: url('images/background.jpg');
+}
+
+.moveable:hover {
+  color: red;
+  border: 5px solid red;
+}
