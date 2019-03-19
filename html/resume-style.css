@@ -37,3 +37,11 @@ ol {
     height: auto;
     border: 3px solid blue;
 }
+
+#resumetext{
+    font-family: Arial;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 58%;
+}
