@@ -29,3 +29,10 @@ ul {
 ol {
     color: silver;
 }
+#Resume {
+    margin-right: 50%;
+    margin-left: 50%;
+    width: auto;
+    height: auto;
+    border: 3px solid blue;
+}
