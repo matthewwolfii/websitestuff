@@ -29,9 +29,19 @@ ol {
     color: silver;
 }
 
-.middle{
+.homename{
     position: absolute;
-    top: 50%;
+    text-align: center;
+    top: 8%;
+    left: 45%;
+    right: 45%;
+    font-size: 30px;
+}
+
+.middle{
+    position: relative;
+    text-align: center;
+    top: 80px;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -46,7 +56,7 @@ ol {
     text-decoration: none;
     margin: 20px 0;
     border: 2px solid black;
-    padding: 5px 30px;
+    padding: 5px 10px;
     overflow: hidden;
     transition: 1s all ease;
 }
@@ -63,7 +73,7 @@ ol {
 }
 
 .home:before{
-    width: 100%;
+    width: 110%;
     height: 0;
     transform: translate(-50%,-50%) rotate(45deg);
 }
@@ -73,7 +83,7 @@ ol {
 }
 
 .about:before{
-    width: 100%;
+    width: 150%;
     height: 0;
     transform: translate(-50%,-50%) rotate(-45deg);
 }
@@ -89,5 +99,5 @@ ol {
 }
 
 .resume:hover:before{
-    height: 300%;
+    height: 310%;
 }
