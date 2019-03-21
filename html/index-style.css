@@ -29,19 +29,29 @@ ol {
     color: silver;
 }
 
+
+.aboutname{
+    font-family: "URW Chancery L", cursive;
+    font-size: 40px;
+}
 .homename{
-    position: absolute;
+    position: relative;
     text-align: center;
-    top: 8%;
-    left: 45%;
-    right: 45%;
+    width: 400px;
+    height: auto;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     font-size: 30px;
+    font-family: Courier;
 }
 
 .middle{
     position: relative;
     text-align: center;
-    top: 80px;
+    width: 400px;
+    height: auto;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
