@@ -11,7 +11,9 @@ etc.)*/
 body {
     margin: 0;
     padding: 0;
-    background-color: red;
+    background: url(https://github.com/matthewwolfii/websitestuff/raw/master/html/background.png);
+    background-size: cover;
+    
 }
 h1 {
     color: white;
@@ -70,7 +72,7 @@ ol {
 .btn{
     position: relative;
     display: inline-block;
-    color: white;
+    color: #9932CC;
     text-align: center;
     font-size: 30px;
     font-family: "URW Chancery L", cursive;
@@ -78,14 +80,15 @@ ol {
     width: 100px;
     height: 40px;
     margin: 20px 10px;
-    border: 2px solid black;
+    border: 2px solid yellow;
     padding: 5px 30px;
     overflow: hidden;
     transition: 1s all ease;
 }
 
 .btn:before{
-    background: black;
+    background: url(https://github.com/matthewwolfii/websitestuff/raw/master/html/backgroundimage.jpg);
+    background-size: cover;
     content: "";
     position: absolute;
     top: 50%;
