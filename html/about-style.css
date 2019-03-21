@@ -9,18 +9,17 @@ Change at least one other thing of your choosing (such as background color, text
 etc.)*/
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: red;
 }
 h1 {
     color: white;
-    font-family: Arial monospace;
 }
 h2 {
     color: white;
-    font-family: Verdana Georgia;
 }
 p {
-    font-family: Tahoma Courier;
     color: white;
 }
 ul {
@@ -30,10 +29,108 @@ ol {
     color: silver;
 }
 
-#pic {
+.aboutname{
+    font-family: "URW Chancery L", cursive;
+    font-size: 40px;
+}
+
+.homename{
+    position: relative;
+    text-align: center;
+    width: 400px;
+    height: auto;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-family: Courier;
+}
+
+.middle{
+    position: relative;
+    text-align: center;
+    width: 700px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.textinfo{
+    position: relative;
+    text-align: center;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: "URW Chancery L", cursive;
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    margin: 20px 10px;
+    border: 2px solid black;
+    padding: 5px 30px;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+
+.btn:before{
+    background: black;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+.home:before{
+    width: 110%;
+    height: 0;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.home:hover:before{
+    height: 300%;
+}
+
+.about:before{
+    width: 150%;
+    height: 0;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.about:hover:before{
+    height: 300%;
+}
+
+.resume:before{
+    width: 100%;
+    height: 0;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.resume:hover:before{
+    height: 310%;
+}
+.pic {
+    position: relative;
     display: block;
+    margin-bottom: 80px;
     margin-right: auto;
     margin-left: auto;
-    width: 40%;
+    width: 10%;
     height: auto;
+    padding: 10px 10px;
 }
