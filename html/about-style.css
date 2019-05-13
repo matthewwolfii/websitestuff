@@ -100,33 +100,43 @@ ol {
 }
 
 .home:before{
-    width: 110%;
-    height: 0;
-    transform: translate(-50%,-50%) rotate(45deg);
-}
-
-.home:hover:before{
-    height: 300%;
-}
-
-.about:before{
-    width: 150%;
-    height: 0;
-    transform: translate(-50%,-50%) rotate(-45deg);
-}
-
-.about:hover:before{
-    height: 300%;
-}
-
-.resume:before{
     width: 100%;
     height: 0;
     transform: translate(-50%,-50%) rotate(45deg);
 }
 
+.home:hover:before{
+    height: 400%;
+}
+
+.about:before{
+    width: 100%;
+    height: 0;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.about:hover:before{
+    height: 400%;
+}
+
+.graphics:before{
+    width: 100%;
+    height: 0;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.graphics:hover:before{
+    height: 400%;
+}
+
+.resume:before{
+    width: 100%;
+    height: 0;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
 .resume:hover:before{
-    height: 310%;
+    height: 400%;
 }
 .pic {
     position: relative;

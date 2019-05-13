@@ -138,3 +138,13 @@ ol {
 .resume:hover:before{
     height: 400%;
 }
+.Resume{
+    position: relative;
+    display: block;
+    border: 2px solid blue;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10%;
+    width: 10%;
+    height: auto;
+}
