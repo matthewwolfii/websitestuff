@@ -78,7 +78,7 @@ ol {
     font-size: 30px;
     font-family: "URW Chancery L", cursive;
     text-decoration: none;
-    width: 100px;
+    width: auto;
     height: 40px;
     margin: 20px 10px;
     border: 2px solid yellow;
@@ -106,7 +106,7 @@ ol {
 }
 
 .home:hover:before{
-    height: 300%;
+    height: 400%;
 }
 
 .about:before{
@@ -116,7 +116,7 @@ ol {
 }
 
 .about:hover:before{
-    height: 300%;
+    height: 400%;
 }
 
 .graphics:before{
@@ -126,7 +126,7 @@ ol {
 }
 
 .graphics:hover:before{
-    height: 300%;
+    height: 400%;
 }
 
 .resume:before{
@@ -136,5 +136,5 @@ ol {
 }
 
 .resume:hover:before{
-    height: 300%;
+    height: 400%;
 }
