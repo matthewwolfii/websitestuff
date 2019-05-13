@@ -78,7 +78,7 @@ ol {
     font-size: 30px;
     font-family: "URW Chancery L", cursive;
     text-decoration: none;
-    width: 100px;
+    width: auto;
     height: 40px;
     margin: 20px 10px;
     border: 2px solid yellow;
