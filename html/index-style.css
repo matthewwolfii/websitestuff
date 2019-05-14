@@ -69,12 +69,13 @@ ol {
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 30px;
+    border
 }
 
 .btn{
     position: relative;
     display: inline-block;
-    color: #9932CC;
+    color: yellow;
     text-align: center;
     font-size: 30px;
     font-family: "URW Chancery L", cursive;
@@ -86,6 +87,10 @@ ol {
     padding: 5px 30px;
     overflow: hidden;
     transition: 1s all ease;
+}
+
+.btn:hover{
+    color: black;
 }
 
 .btn:before{
