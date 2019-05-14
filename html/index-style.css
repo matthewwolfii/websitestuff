@@ -11,8 +11,9 @@ etc.)*/
 body {
     margin: 0;
     padding: 0;
-    background: url(https://github.com/matthewwolfii/websitestuff/raw/master/html/background.png);
-    background-size: cover;
+    background: url(https://github.com/matthewwolfii/websitestuff/blob/master/html/images/p16qu640qd403f0u1uh41s5o4849-details.png?raw=true);
+    background-size: 200px;
+    background-repeat: repeat;
     
 }
 h1 {
