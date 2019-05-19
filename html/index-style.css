@@ -135,10 +135,21 @@ ol {
     height: 400%;
 }
 
-.resume:before{
+.hobbies:before{
     width: 100%;
     height: 0;
     transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.hobbies:hover:before{
+    height: 400%;
+}
+
+
+.resume:before{
+    width: 100%;
+    height: 0;
+    transform: translate(-50%,-50%) rotate(45deg);
 }
 
 .resume:hover:before{
