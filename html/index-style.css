@@ -80,7 +80,7 @@ ol {
     font-family: "URW Chancery L", cursive;
     text-decoration: none;
     width: auto;
-    height: 40px;
+    height: auto;
     margin: 20px 10px;
     border: 2px solid yellow;
     padding: 5px 30px;
