@@ -15,12 +15,10 @@ p{
     text-align: center;
 }
 
-button{
+input{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 50px;
-    width: 100px;
-    background-image: url("https://github.com/matthewwolfii/websitestuff/raw/master/putting/showscores.png");
-    background-color: blue;
+    height: 100px;
+    width: auto;
 }
