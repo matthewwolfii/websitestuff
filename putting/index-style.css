@@ -21,6 +21,6 @@ button{
     margin-right: auto;
     height: 50px;
     width: 100px;
-    background-image: url('https://github.com/matthewwolfii/websitestuff/raw/master/putting/showscores.png');
-
+    background-image: url("https://github.com/matthewwolfii/websitestuff/raw/master/putting/showscores.png");
+    background-color: blue;
 }
