@@ -14,3 +14,9 @@ h3{
 p{
     text-align: center;
 }
+
+div{
+    align-content: center;
+    height: 95;
+    width: 95;
+}
