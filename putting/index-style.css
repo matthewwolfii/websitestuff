@@ -15,8 +15,12 @@ p{
     text-align: center;
 }
 
-div{
-    align-content: center;
-    height: 95;
-    width: 95;
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 100px;
+    background-image: url("https://github.com/matthewwolfii/websitestuff/raw/master/putting/showscores.png");
+
 }
