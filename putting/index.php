@@ -2,6 +2,7 @@
 <html>
 <head>
     <link href="index-style.css" type="text/css" rel="stylesheet" />
+
 </head>
 <h1>Player:</h1>
 
@@ -11,7 +12,16 @@
 
 <p>20ft Recruit:</p>
 
-<input id="arrow" type="image" onclick="alert('Score Up')" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/uparrow.png" alt="show">
+<?php
+    function button1() {
+    echo "Up Score";
+}
+    function button2() {
+    echo "Down Score";
+}
+?>
+
+<input id="arrow" type="image" value="button1" onclick="alert('Score Up')" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/uparrow.png" alt="show">
 
 <p id="20ftR">0</p>
 
