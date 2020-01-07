@@ -13,8 +13,17 @@
     <script type="text/javascript">
     var twentyr = 0;
     function increment() {
-        twentyr += 1;
-        document.getElementById("twentyr").innerHTML = twentyr;
+        if (twentyr < 5){
+            twentyr += 1;
+            document.getElementById("twentyr").innerHTML = twentyr;
+        }
+    };
+
+    function decrement() {
+        if (twentyr > 0 ){
+            twentyr -= 1;
+            document.getElementById("twentyr").innerHTML = twentyr;
+        }
     };
     </script>
 
@@ -24,9 +33,9 @@
 
 <input id="uparrow" type="image" onClick="increment()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/uparrow.png" alt="show">
 
-    <p>Putts: <a id="twentyr">0</a></p>
+    <p id="twentyr">0</p>
 
-<input id="downarrow" type="image"  src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/downarrow.png" alt="show">
+<input id="downarrow" type="image" onClick="decrement()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/downarrow.png" alt="show">
 
 <p>25ft Recruit:&nbsp;&nbsp;</p>
 

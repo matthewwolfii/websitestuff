@@ -26,7 +26,8 @@ input{
     width: auto;
 }
 
-#arrow{
+#uparrow, #downarrow{
+
     width: auto;
     height: 50px;
 }
