@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PUTTING</title>
+	</head>
+	<body>
+		<?php
+			$host = "localhost";
+			$user = "putt";
+			#$pass = "MW01fPa$$w0rd";
+			$pass = "";
+			$name = "putting";
+
+			$conn = mysqli_connect($host,$user,$pass,$name);
+
+			if(!$conn):
+			die('Connect Error (' . mysqli_connect_errno() . ') '. mysqli_connect_error());
+			endif;
+			#$sql = "SELECT * from test WHERE person = 'matthew'";
+			$sql = "SELECT * from test";
+			$result = mysqli_query($conn, $sql);
+			#if($result->num_rows > 1){
+			#	echo "ERROR: duplicate records found.";
+			#}
+			#print_result($result);
+
+			function print_result($input){
+				while($row = $input->fetch_array()){
+					echo $row['person'] . " " . $row['score'];
+					echo "<br />";
+				}
+			}
+			function getList($input){
+				while($row = $input->fetch_array()){
+					echo "<option value='test'>" . $row['person'] . "</option>";
+				}
+			}
+		?>
+		<select>
+			<?php getList($result); ?>
+		</select>
+	</body>
+
+</html>
