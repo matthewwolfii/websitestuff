@@ -1,4 +1,128 @@
+@font-face {
+	font-family: sbufont;
+	src: url(NFL_Minnesota_Vikings.ttf);
+}
+
 body{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 2%;
+	background-color: #592c82;
+	//background-image: url("");
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	font-family: sbufont;
+}
+
+select{
+	height: 100px;
+	width: 200px;
+}
+
+#name{
+	width: 400px;
+	height: 50px;
+}
+
+input{
+  	display: block;
+    	margin-left: auto;
+  	margin-right: auto;
+   	height: auto;
+   	width: 400px;
+}
+
+.container {
+	position: relative;
+	text-align: center;
+}
+
+#selecttext {
+	position: absolute;
+	top: 8%;
+	left: 50%;
+	right: auto;
+	transform: translate(-50%, -50%);
+}
+
+#submitform {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	right: auto;
+	transform: translate(-50%, -50%);
+}
+
+#submitformselect {
 	background-color: purple;
 	color: white;
+	height: 40px;
+	font-family: sbufont;
+	font-size: 18px;
 }
+
+.selectplayerbutton {
+	position: absolute;
+	top: 31%;
+	left: 50%;
+	height: 75px;
+	width: 175px;
+	transform: translate(-50%, -50%);
+}
+
+
+#createplayertext {
+	position: absolute;
+	top: 36%;
+	left: 50%;
+	right: auto;
+	transform: translate(-50%, -50%);
+}
+
+
+#insertname {
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	right: auto;
+	transform: translate(-50%, -50%);
+	font-family: sbufont;
+
+}
+
+.submitbuttons {
+	position: absolute;
+	height: 75px;
+	width: 412px;
+	top: 61%;
+	left: 50%;
+	transform: translate(-50%, -10%);
+}
+
+.createplayerbutton {
+	position: absolute;
+	left: 0%;
+	height: 75px;
+	width: 175px;
+}
+
+.deleteplayerbutton {
+	position: absolute;
+	right: 0%;
+	height: 75px;
+	width: 175px;
+
+}
+
+.showscorebutton {
+	position: absolute;
+	top: 79%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 75px;
+	width: 175px;
+}
+
+

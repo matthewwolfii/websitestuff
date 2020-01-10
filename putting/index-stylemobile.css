@@ -1,0 +1,34 @@
+body{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 2%;
+	background-color: #592c82;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+}
+
+select{
+	height: 100px;
+	width: 200px;
+}
+
+#button{
+	height: 100px;
+	width: 300px;
+	margin-top: 2%;
+}
+
+#name{
+	width: 400px;
+	height: 50px;
+}
+
+input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 400px;
+}
