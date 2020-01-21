@@ -83,7 +83,7 @@ body {
 				<label for="pwd">
 					<i class="fas fa-lock"></i>
 				</label>
-				
+
 				<input type="password" name="pwd" placeholder="Password" id="password" required>
 				<label for="verifyPwd">
 					<i class="fas fa-lock"></i>
@@ -91,6 +91,13 @@ body {
 
 				<input type="password" name="verifyPwd" placeholder="Verify Password" id="password" required>
 				<input type="submit" value="Register">
+				<?php
+					session_start();
+					if(isset($_SESSION['loginError'])){ #Displays error message and clears error
+						echo "<p>" . $_SESSION['loginError'] . "</p>";
+						$_SESSION['loginError'] = NULL;
+					}
+				 ?>
 			</form>
 		</div>
 	</body>

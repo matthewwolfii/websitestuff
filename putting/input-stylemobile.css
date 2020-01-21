@@ -1,33 +1,137 @@
+@font-face {
+	font-family: sbufont;
+	src: url(NFL_Minnesota_Vikings.ttf);
+}
+
 html{
-    background-color: #592c82;
-    color: white;
+    	background-color: #592c82;
+    	color: white;
+	font-family: sbufont;
+	text-align: center;
+}
+
+ul {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+		overflow: hidden;
+  	background-color: #333;
+		width: 100%;
+}
+
+li {
+  	float: left;
+}
+
+li a {
+  	display: block;
+  	color: white;
+  	text-align: center;
+  	padding: 5px 5px;
+  	text-decoration: none;
+		font-size: 12.5pt;
+}
+
+li a:hover {
+  	background-color: #111;
 }
 
 h1{
-    text-align: center;
-    font-size: 50px;
+    	text-align: center;
+    	font-size: 60px;
 }
 
 h2{
-    text-align: center;
-    font-size: 30px;
+    	text-align: center;
+    	font-size: 50px;
 }
 
 p{
-    text-align: center;
-    font-size: 20px
+    	text-align: center;
+    	font-size: 40px
 }
 
+#one {
+	position: relative;
+	height: 400px;
+	width: 100%;
+}
+
+#weekcss {
+	position: absolute;
+	left: 35%;
+	transform: translate (-50%, -50%);
+
+}
+
+#roundcss {
+	position: absolute;
+	right: 35%;
+	transform: translate (-50%, -50%);
+}
+
+#two {
+	position: relative;
+	height: 400px;
+	width: 100%;
+	top: 20%;
+	text-align: center;
+}
+
+#twentyrcss {
+	position: absolute;
+	left: 10%;
+	transform: translate (-50%, -50%);
+
+}
+
+#twentyfivercss {
+	position: absolute;
+	left: 30%;
+	right: 30%;
+	transform: translate (-50%, -50%);
+	text-align: center;
+}
+
+#thirtythreercss {
+	position: absolute;
+	right: 10%;
+	transform: translate (-50%, -50%);
+
+}
+
+#three {
+	position: relative;
+	height: 400px;
+	width: 100%;
+	top: 40%;
+}
+
+#twentyfivemcss {
+	position: absolute;
+	left: 20%;
+	transform: translate (-50%, -50%);
+
+}
+
+#thirtythreemcss {
+	position: absolute;
+	right: 20%;
+	transform: translate (-50%, -50%);
+}
+
+
+
 input{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    width: 400px;
+    	display: block;
+   	margin-left: auto;
+    	margin-right: auto;
+    	height: auto;
+    	width: 400px;
 }
 
 #uparrow, #downarrow{
 
-    width: auto;
-    height: 100px;
+    	width: auto;
+    	height: 70px;
 }

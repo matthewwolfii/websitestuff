@@ -80,6 +80,13 @@ body {
 				</label>
 				<input type="password" name="password" placeholder="Password" id="password" required>
 				<input type="submit" value="Login">
+				<?php
+					session_start();
+					if(isset($_SESSION['loginError'])){ #Displays error message and clears error
+						echo "<p>" . $_SESSION['loginError'] . "</p>";
+						$_SESSION['loginError'] = NULL;
+					}
+				 ?>
 			</form>
 		</div>
 	</body>

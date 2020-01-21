@@ -37,11 +37,21 @@ input{
 .container {
 	position: relative;
 	text-align: center;
+	top: 90%;
+}
+
+#welcome {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	right: auto;
+	transform: translate(-50%, -50%);
+	font-size: 30pt;
 }
 
 #selecttext {
 	position: absolute;
-	top: 8%;
+	top: 12%;
 	left: 50%;
 	right: auto;
 	transform: translate(-50%, -50%);
@@ -49,14 +59,14 @@ input{
 
 #submitform {
 	position: absolute;
-	top: 20%;
+	top: 24%;
 	left: 50%;
 	right: auto;
 	transform: translate(-50%, -50%);
 }
 
 #submitformselect {
-	background-color: purple;
+	background-color: #592c82;
 	color: white;
 	height: 40px;
 	font-family: sbufont;
@@ -65,7 +75,7 @@ input{
 
 .selectplayerbutton {
 	position: absolute;
-	top: 31%;
+	top: 35%;
 	left: 50%;
 	height: 75px;
 	width: 175px;
@@ -75,7 +85,7 @@ input{
 
 #createplayertext {
 	position: absolute;
-	top: 36%;
+	top: 40%;
 	left: 50%;
 	right: auto;
 	transform: translate(-50%, -50%);
@@ -84,19 +94,22 @@ input{
 
 #insertname {
 	position: absolute;
-	top: 53%;
+	top: 57%;
 	left: 50%;
 	right: auto;
 	transform: translate(-50%, -50%);
 	font-family: sbufont;
+}
 
+#name {
+	background-color: #592c82;
 }
 
 .submitbuttons {
 	position: absolute;
 	height: 75px;
 	width: 412px;
-	top: 61%;
+	top: 65%;
 	left: 50%;
 	transform: translate(-50%, -10%);
 }
@@ -118,7 +131,7 @@ input{
 
 .showscorebutton {
 	position: absolute;
-	top: 79%;
+	top: 82%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	height: 75px;

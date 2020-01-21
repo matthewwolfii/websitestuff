@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+
 <head>
-	<link rel="stylesheet" type="text/css" href="scores-style.css">
+	<link id="pagestyle" rel="stylesheet" type="text/css" href="scores-style.css">
+	<script src="sortable.js"></script>
 </head>
 <body onload="mobileMode()">
 <ul>
 	<li><a onclick='location.replace("https://putting.matthew-wolf.org")'>Home</a></li>
-	<li><a onclick='toggleTable("weekOne")'>Week 1</a></li>	
-	<li><a onclick='toggleTable("weekTwo")'>Week 2</a></li>	
-	<li><a onclick='toggleTable("weekThree")'>Week 3</a></li>	
-	<li><a onclick='toggleTable("weekFour")'>Week 4</a></li>	
-	<li><a onclick='toggleTable("weekFive")'>Week 5</a></li>	
+	<li><a onclick='toggleTable("weekOne")'>Week 1</a></li>
+	<li><a onclick='toggleTable("weekTwo")'>Week 2</a></li>
+	<li><a onclick='toggleTable("weekThree")'>Week 3</a></li>
+	<li><a onclick='toggleTable("weekFour")'>Week 4</a></li>
+	<li><a onclick='toggleTable("weekFive")'>Week 5</a></li>
 	<li><a onclick='toggleTable("weekSix")'>Week 6</a></li>
 	<li><a onclick='toggleTable("total")'>Total</a></li>
-	<!--<li><a onclick='toggleTable("all")'>Show All</a></li>	-->
 </ul>
 
 <script type="text/javascript">
 	function swapStyleSheet(sheet) {
-    		document.getElementById("pagestyle").setAttribute("href", sheet);
-	}
-	function mobileMode(){
-    		var x= navigator.userAgent;
-    			if (x.indexOf('Mobile')>=0){
-        			swapStyleSheet("scores-stylemobile.css") ;
-    			}
-   	}
+    			document.getElementById("pagestyle").setAttribute("href", sheet);
+		}
+
+
+		function mobileMode(){
+    			var x= navigator.userAgent;
+    				if (x.indexOf('Mobile')>=0){
+        			swapStyleSheet("scores-stylemobile.css");
+    				}
+   		else{
+    		}
+		}
 	function toggleTable(idNum){
 		if(idNum == "all"){
 			document.getElementById("weekOne").style.display = 'block';
@@ -56,32 +62,9 @@
 			document.getElementById(idNum).style.display = 'block';
 			document.getElementById(idNum + "Table").style.display = 'table';
 		}
-		
+
 	}
 </script>
-<style>
-	ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-li a:hover {
-  background-color: #111;
-}</style>
 <?php
 	session_start();
 	if (!isset($_SESSION['loggedin'])) {
@@ -91,10 +74,5 @@ li a:hover {
 	include 'functions.php';
 	loadTables();
 ?>
-<!--<form action="index.php">
-    <input type="image" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/home.png" alt="Home">
-</form>-->
-
-
 </body>
 </html>

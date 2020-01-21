@@ -1,12 +1,64 @@
+@font-face {
+	font-family: sbufont;
+	src: url(NFL_Minnesota_Vikings.ttf);
+}
+
 body{
 	background-color: #592c82;
 	color: white;
+	font-family: sbufont;
+}
+
+ul {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+		overflow: hidden;
+  	background-color: #333;
+		width: 51%;
+}
+
+li {
+  	float: left;
+	font-size: 15pt;
+}
+
+li a {
+  	display: block;
+  	color: white;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+	font-size: 25pt;
+}
+
+li a:hover {
+  	background-color: #111;
+}
+
+h3 {
+	font-family: sbufont;
+	font-size: 20pt;
 }
 
 input{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    width: 400px;
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+    	height: auto;
+    	width: 400px;
+}
+
+.sortable {
+	width: 100%;
+	font-size: 20pt;
+}
+
+
+td {
+	height: 50px;
+}
+
+th {
+	height: 100px;
 }

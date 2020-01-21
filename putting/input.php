@@ -11,16 +11,17 @@
 	}
 	include 'functions.php';
 ?>
+<ul>
+  <li><a onclick='location.replace("https://putting.matthew-wolf.org")'>Home</a></li>
+  <li><a onclick='location.replace("https://putting.matthew-wolf.org/scores.php")'>Show Scores</a></li>
+</ul>
 
 <h1>Player:</h1>
 
 <h2><?php echo $_SESSION['name'];?></h2>
 
-<p>&nbsp;</p>
-
-
-
 <body onload="mobileMode()">
+
     <script type="text/javascript">
 
 		function swapStyleSheet(sheet) {
@@ -47,7 +48,7 @@
 	}
             document.getElementById("twentyr").innerHTML = twentyr;
 		total();
-        
+
     };
 
     function decrement() {
@@ -59,7 +60,7 @@
 	}
             document.getElementById("twentyr").innerHTML = twentyr;
 		total();
-        
+
     };
 
 var twentyfiver = 0;
@@ -72,7 +73,7 @@ var twentyfiver = 0;
 	}
             document.getElementById("twentyfiver").innerHTML = twentyfiver;
 		total();
-        
+
     };
 
     function decrement1() {
@@ -82,7 +83,7 @@ var twentyfiver = 0;
 		twentyfiver = 5;
             document.getElementById("twentyfiver").innerHTML = twentyfiver;
 		total();
-        
+
     };
 
 
@@ -94,7 +95,7 @@ var thirtythreer = 0;
 		thirtythreer = 0;
             document.getElementById("thirtythreer").innerHTML = thirtythreer;
 		total();
-        
+
     };
 
     function decrement2() {
@@ -104,7 +105,7 @@ var thirtythreer = 0;
 		thirtythreer = 5;
             document.getElementById("thirtythreer").innerHTML = thirtythreer;
 		total();
-        
+
     };
 
 
@@ -116,7 +117,7 @@ var twentyfivem = 0;
 		twentyfivem = 0;
             document.getElementById("twentyfivem").innerHTML = twentyfivem;
 		total();
-        
+
     };
 
     function decrement3() {
@@ -126,7 +127,7 @@ var twentyfivem = 0;
 		twentyfivem = 5;
             document.getElementById("twentyfivem").innerHTML = twentyfivem;
 		total();
-        
+
     };
 
 
@@ -138,7 +139,7 @@ var thirtythreem = 0;
 		thirtythreem = 0;
             document.getElementById("thirtythreem").innerHTML = thirtythreem;
 		total();
-        
+
     };
 
     function decrement4() {
@@ -148,7 +149,7 @@ var thirtythreem = 0;
 		thirtythreem = 5;
             document.getElementById("thirtythreem").innerHTML = thirtythreem;
 		total();
-        
+
     };
 
 var week = 1;
@@ -158,7 +159,7 @@ var week = 1;
 	else
 		week = 1;
             document.getElementById("week").innerHTML = week;
-        
+
     };
 
     function decrement5() {
@@ -167,7 +168,7 @@ var week = 1;
 	else
 		week = 6;
             document.getElementById("week").innerHTML = week;
-        
+
     };
 
 var round = 1;
@@ -177,7 +178,7 @@ var round = 1;
 	else
 		round = 1;
             document.getElementById("round").innerHTML = round;
-        
+
     };
 
     function decrement6() {
@@ -186,10 +187,11 @@ var round = 1;
 	else
 		round = 3;
             document.getElementById("round").innerHTML = round;
-        
+
     };
-	
+
 	function submit() {
+        //alert('hi');
 		document.getElementById('first').value= twentyr;
 		document.getElementById('second').value= twentyfiver;
 		document.getElementById('third').value= thirtythreer;
@@ -198,7 +200,7 @@ var round = 1;
 		document.getElementById('sixth').value= week;
 		document.getElementById('seventh').value= round;
 		document.getElementById('eight').value= totalpoints;
-		document.forms[2].submit();
+		document.forms['jstophp'].submit();
 }
 
 	function total() {
@@ -210,7 +212,8 @@ var round = 1;
     </script>
 
 
-
+<div id="one">
+<div id="weekcss">
 <p>Week:</p>
 
 <input id="uparrow" type="image" onClick="increment5()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/uparrow.png" alt="show">
@@ -218,8 +221,9 @@ var round = 1;
 	<p id="week">1</p>
 
 <input id="downarrow" type="image" onClick="decrement5()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/downarrow.png" alt="show">
+</div>
 
-
+<div id="roundcss">
 <p>Round:</p>
 
 <input id="uparrow" type="image" onClick="increment6()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/uparrow.png" alt="show">
@@ -227,8 +231,11 @@ var round = 1;
 	<p id="round">1</p>
 
 <input id="downarrow" type="image" onClick="decrement6()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/downarrow.png" alt="show">
+</div>
+</div>
 
-
+<div id="two">
+<div id="twentyrcss">
 <p>20ft Recruit:</p>
 
 <input id="uparrow" type="image" onClick="increment()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/uparrow.png" alt="show">
@@ -236,15 +243,20 @@ var round = 1;
     <p id="twentyr">0</p>
 
 <input id="downarrow" type="image" onClick="decrement()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/downarrow.png" alt="show">
+</div>
 
-<p>25ft Recruit:&nbsp;&nbsp;</p>
+<div id="twentyfivercss">
+<p>25ft Recruit:</p>
 
 <input id="uparrow" type="image" onClick="increment1()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/uparrow.png" alt="show">
 
 <p id="twentyfiver">0</p>
 
 <input id="downarrow" type="image" onClick="decrement1()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/downarrow.png" alt="show">
+</div>
 
+
+<div id="thirtythreercss">
 <p>33ft Recruit:</p>
 
 <input id="uparrow" type="image" onClick="increment2()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/uparrow.png" alt="show">
@@ -252,7 +264,11 @@ var round = 1;
 <p id="thirtythreer">0</p>
 
 <input id="downarrow" type="image" onClick="decrement2()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/downarrow.png" alt="show">
+</div>
+</div>
 
+<div id="three">
+<div id="twentyfivemcss">
 <p>25ft Marksmen:</p>
 
 <input id="uparrow" type="image" onClick="increment3()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/uparrow.png" alt="show">
@@ -260,7 +276,9 @@ var round = 1;
 <p id="twentyfivem">0</p>
 
 <input id="downarrow" type="image" onClick="decrement3()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/downarrow.png" alt="show">
+</div>
 
+<div id="thirtythreemcss">
 <p>33ft Marksmen:</p>
 
 <input id="uparrow" type="image" onClick="increment4()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/uparrow.png" alt="show">
@@ -268,22 +286,17 @@ var round = 1;
 <p id="thirtythreem">0</p>
 
 <input id="downarrow" type="image" onClick="decrement4()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/downarrow.png" alt="show">
+</div>
+</div>
+
 
 <h1>Total:</h1>
 
 <h2 id="totalpoints">0</h2>
 
-<input type="image"  onClick="submit()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/submit-button.png" alt="show">
+<input type="image"  onClick="submit()" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/submit-button.png" alt="submit">
 
-<form action="scores.php">
-    <input type="image" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/showscores.png" alt="Scores">
-</form>
-
-<form action="index.php">
-    <input type="image" src="https://github.com/matthewwolfii/websitestuff/raw/master/putting/home.png" alt="Home">
-</form>
-
-<form method = "post">
+<form id="jstophp" method = "post">
 
     	<input id="first" type="hidden" name="first">
     	<input id="second" type="hidden" name="second">
@@ -299,7 +312,3 @@ var round = 1;
 </body>
 
 </html>
-
-
-
-
